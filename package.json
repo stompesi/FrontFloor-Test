@@ -1,0 +1,22 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^3.5.0",
+    "jade": "*",
+    "passport": "^0.2.0",
+    "passport-google-oauth": "^0.1.5",
+    "ejs": "^0.8.5"
+  },
+   "oauth": {
+    "google": {
+      "GOOGLE_APP_ID": "703587978183-c98ihmnj6e17n7liverrgqigbppbta7l.apps.googleusercontent.com",
+      "GOOGLE_APP_SECRET": "ryEAn9HzZLgYHgq4Y4rZn-SE",
+      "callbackURL": "http://localhost:3000/auth/google/callback"
+    }
+  }
+}
