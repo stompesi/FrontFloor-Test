@@ -19,7 +19,20 @@
 	</head>
 
 	<body>
-		<a href="/auth/google">google login</a>
-		<a href="/logout">logout</a>
+		<div>
+			<form action="/login" method="post">
+			    <div>
+			        <label>Username:</label>
+			        <input type="text" name="userId"/>
+			    </div>
+			    <div>
+			        <label>Password:</label>
+			        <input type="password" name="password"/>
+			    </div>
+			    <div>
+			        <input type="submit" value="Log In"/>
+			    </div>
+			</form>
+		</div>
 	</body>
 </html>

@@ -36,7 +36,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-require('./oauth')(app);
+//require('./oauth')(app);
+var local = require('./local');
+local.init(app); 
+app.use(app.router);
+
 app.get('/', function(req, res) {
   //
   // 세션정보를 확인한다.
